@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "hashicorp.terraform"
+  ],
+  "unwantedRecommendations": []
+}
