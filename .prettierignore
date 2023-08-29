@@ -1,0 +1,19 @@
+# Ignore:
+node_modules
+
+# Ignore build output
+dist
+build
+lib
+
+# Ignore coverage
+coverage
+
+# Ignore docs
+docs
+
+# Ignore test reports
+test-reports
+
+# Markdown
+*.md
