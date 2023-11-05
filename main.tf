@@ -10,6 +10,14 @@ locals {
 }
 
 # Create the foundational ous
+## Deployments ou
+module "deployments_ou" {
+  source         = "./modules/flagscript-staged-ou"
+  application_id = var.application_id
+  name           = "Deployments"
+  parent_id      = local.flagscript_root_id
+}
+
 ## Infrastructure ou
 module "infrastructure_ou" {
   source         = "./modules/flagscript-staged-ou"
