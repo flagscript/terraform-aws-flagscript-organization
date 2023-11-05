@@ -16,6 +16,7 @@
 
 | Name | Source | Version |
 |------|--------|---------|
+| <a name="module_deployments_ou"></a> [deployments\_ou](#module\_deployments\_ou) | ./modules/flagscript-staged-ou | n/a |
 | <a name="module_infrastructure_ou"></a> [infrastructure\_ou](#module\_infrastructure\_ou) | ./modules/flagscript-staged-ou | n/a |
 | <a name="module_security_ou"></a> [security\_ou](#module\_security\_ou) | ./modules/flagscript-staged-ou | n/a |
 | <a name="module_suspended_ou"></a> [suspended\_ou](#module\_suspended\_ou) | ./modules/foundational-ou | n/a |
@@ -41,10 +42,14 @@
 
 | Name | Description |
 |------|-------------|
+| <a name="output_deployments_ou_arn"></a> [deployments\_ou\_arn](#output\_deployments\_ou\_arn) | Arn of the deployments ou. |
+| <a name="output_deployments_ou_id"></a> [deployments\_ou\_id](#output\_deployments\_ou\_id) | Id of the deployments ou. |
 | <a name="output_infrastructure_ou_arn"></a> [infrastructure\_ou\_arn](#output\_infrastructure\_ou\_arn) | Arn of the infrastructure ou. |
 | <a name="output_infrastructure_ou_id"></a> [infrastructure\_ou\_id](#output\_infrastructure\_ou\_id) | Id of the infrastructure ou. |
 | <a name="output_org_arn"></a> [org\_arn](#output\_org\_arn) | Arn of the flagscript organization. |
 | <a name="output_org_id"></a> [org\_id](#output\_org\_id) | Id of the flagscript organization. |
+| <a name="output_prod_deployments_ou_arn"></a> [prod\_deployments\_ou\_arn](#output\_prod\_deployments\_ou\_arn) | Arn of the prod deployments ou. |
+| <a name="output_prod_deployments_ou_id"></a> [prod\_deployments\_ou\_id](#output\_prod\_deployments\_ou\_id) | Id of the prod deployments ou. |
 | <a name="output_prod_infrastructure_ou_arn"></a> [prod\_infrastructure\_ou\_arn](#output\_prod\_infrastructure\_ou\_arn) | Arn of the prod infrastructure ou. |
 | <a name="output_prod_infrastructure_ou_id"></a> [prod\_infrastructure\_ou\_id](#output\_prod\_infrastructure\_ou\_id) | Id of the prod infrastructure ou. |
 | <a name="output_prod_security_ou_arn"></a> [prod\_security\_ou\_arn](#output\_prod\_security\_ou\_arn) | Arn of the prod security ou. |
@@ -53,6 +58,8 @@
 | <a name="output_security_ou_id"></a> [security\_ou\_id](#output\_security\_ou\_id) | Id of the security ou. |
 | <a name="output_suspended_ou_arn"></a> [suspended\_ou\_arn](#output\_suspended\_ou\_arn) | Arn of the suspended ou. |
 | <a name="output_suspended_ou_id"></a> [suspended\_ou\_id](#output\_suspended\_ou\_id) | Id of the suspended ou. |
+| <a name="output_test_deployments_ou_arn"></a> [test\_deployments\_ou\_arn](#output\_test\_deployments\_ou\_arn) | Arn of the test deployments ou. |
+| <a name="output_test_deployments_ou_id"></a> [test\_deployments\_ou\_id](#output\_test\_deployments\_ou\_id) | Id of the test deployments ou. |
 | <a name="output_test_infrastructure_ou_arn"></a> [test\_infrastructure\_ou\_arn](#output\_test\_infrastructure\_ou\_arn) | Arn of the test infrastructure ou. |
 | <a name="output_test_infrastructure_ou_id"></a> [test\_infrastructure\_ou\_id](#output\_test\_infrastructure\_ou\_id) | Id of the test infrastructure ou. |
 | <a name="output_test_security_ou_arn"></a> [test\_security\_ou\_arn](#output\_test\_security\_ou\_arn) | Arn of the test security ou. |
