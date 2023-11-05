@@ -3,14 +3,14 @@
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 5.24.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.6 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.24.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.0 |
 
 ## Modules
 
@@ -25,7 +25,7 @@
 
 | Name | Type |
 |------|------|
-| [aws_organizations_organization.flagscript_org](https://registry.terraform.io/providers/hashicorp/aws/5.24.0/docs/resources/organizations_organization) | resource |
+| [aws_organizations_organization.flagscript_org](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/organizations_organization) | resource |
 
 ## Inputs
 
