@@ -6,6 +6,7 @@ locals {
     "flagscript:cost-allocation:owner"          = var.client_id
     "flagscript:data-owner:owner"               = var.org_owner
     "flagscript:operations:owner"               = var.org_owner
+    "github:module:repository"                  = "flagscript/terraform-aws-flagscript-organization"
     "terraform:module"                          = "terraform-aws-flagscript-organization//client-ous"
   }
 }
