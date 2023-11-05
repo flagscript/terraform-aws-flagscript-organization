@@ -9,6 +9,37 @@ output "org_id" {
   value       = aws_organizations_organization.flagscript_org.id
 }
 
+## Deployments ou outputs
+output "deployments_ou_arn" {
+  description = "Arn of the deployments ou."
+  value       = module.deployments_ou.ou_arn
+}
+
+output "deployments_ou_id" {
+  description = "Id of the deployments ou."
+  value       = module.deployments_ou.ou_id
+}
+
+output "test_deployments_ou_arn" {
+  description = "Arn of the test deployments ou."
+  value       = module.deployments_ou.test_ou_arn
+}
+
+output "test_deployments_ou_id" {
+  description = "Id of the test deployments ou."
+  value       = module.deployments_ou.test_ou_id
+}
+
+output "prod_deployments_ou_arn" {
+  description = "Arn of the prod deployments ou."
+  value       = module.deployments_ou.prod_ou_arn
+}
+
+output "prod_deployments_ou_id" {
+  description = "Id of the prod deployments ou."
+  value       = module.deployments_ou.prod_ou_id
+}
+
 # Infrastructure ou outputs
 output "infrastructure_ou_arn" {
   description = "Arn of the infrastructure ou."
