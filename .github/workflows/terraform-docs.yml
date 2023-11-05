@@ -1,6 +1,8 @@
 name: Generate terraform docs
 on:
-  - push
+  pull_request:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -9,10 +11,11 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout source
+        uses: actions/checkout@v4
         with:
-          ref: main
-      - name: Render terraform docs and push changes back to main
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Render terraform docs and push changes back to PR
         uses: terraform-docs/gh-actions@v1.0.0
         with:
           git-push: "true"
