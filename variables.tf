@@ -1,3 +1,10 @@
+# REQUIRED PARAMETERS
+# These parameters must be supplied when consuming this module.
+variable "application_id" {
+  description = "Application Id"
+  type        = string
+}
+
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
 variable "allowed_service_principals" {
@@ -6,7 +13,7 @@ variable "allowed_service_principals" {
   type        = list(string)
 }
 
-varible "enabled_policy_types" {
+variable "enabled_policy_types" {
   default = [
     "AISERVICES_OPT_OUT_POLICY",
     "BACKUP_POLICY",
@@ -17,7 +24,7 @@ varible "enabled_policy_types" {
   type        = list(string)
 }
 
-variables "feature_set" {
+variable "feature_set" {
   default     = "ALL"
   description = "Specify 'ALL' (default) or 'CONSOLIDATED_BILLING'."
   type        = string
@@ -25,4 +32,10 @@ variables "feature_set" {
     condition     = can(regex("^(ALL|CONSOLIDATED_BILLING)$", var.feature_set))
     error_message = "Variable feature_set must be ALL or CONSOLIDATED_BILLING."
   }
+}
+
+variable "org_owner" {
+  default     = "flagscript"
+  description = "Owner moniker for the flagscript organization."
+  type        = string
 }

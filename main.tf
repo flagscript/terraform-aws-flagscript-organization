@@ -9,32 +9,35 @@ locals {
   flagscript_root_id = aws_organizations_organization.flagscript_org.roots[0].id
 }
 
-# Create the core ous
-## infrastructure ou
-module "core_infrastructure_ou" {
-  source    = "./modules/flagscript_ou"
-  name      = "infrastructure"
-  parent_id = local.flagscript_root_id
+# Create the foundational ous
+## Infrastructure ou
+module "infrastructure_ou" {
+  source         = "./modules/flagscript-staged-ou"
+  application_id = var.application_id
+  name           = "Infrastructure"
+  parent_id      = local.flagscript_root_id
 }
 
-## security ou
-module "core_security_ou" {
-  source    = "./modules/flagscript_ou"
-  name      = "security"
-  parent_id = local.flagscript_root_id
+## Security ou
+module "security_ou" {
+  source         = "./modules/flagscript-staged-ou"
+  application_id = var.application_id
+  name           = "Security"
+  parent_id      = local.flagscript_root_id
 }
 
+## Suspended ou
+module "suspended_ou" {
+  source         = "./modules/foundational-ou"
+  application_id = var.application_id
+  name           = "Suspended"
+  parent_id      = local.flagscript_root_id
+}
 
 ## Workloads ou
-module "core_workloads_ou" {
-  source    = "./modules/flagscript_ou"
-  name      = "workloads"
-  parent_id = local.flagscript_root_id
-}
-
-# Create flagscript owner workload.
-module "flagscript_owner" {
-  source          = "./modules/flagscript_org_owner"
-  app_name        = "flagscript"
-  workloads_ou_id = module.core_workloads_ou.id
+module "workloads_ou" {
+  source         = "./modules/foundational-ou"
+  application_id = var.application_id
+  name           = "Workloads"
+  parent_id      = local.flagscript_root_id
 }
