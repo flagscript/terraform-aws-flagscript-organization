@@ -12,7 +12,7 @@ locals {
 # Create the foundational ous
 ## Deployments ou
 module "deployments_ou" {
-  source         = "./modules/flagscript-staged-ou"
+  source         = "./modules/foundational-staged-ou"
   application_id = var.application_id
   name           = "Deployments"
   parent_id      = local.flagscript_root_id
@@ -20,7 +20,7 @@ module "deployments_ou" {
 
 ## Infrastructure ou
 module "infrastructure_ou" {
-  source         = "./modules/flagscript-staged-ou"
+  source         = "./modules/foundational-staged-ou"
   application_id = var.application_id
   name           = "Infrastructure"
   parent_id      = local.flagscript_root_id
@@ -28,7 +28,7 @@ module "infrastructure_ou" {
 
 ## Security ou
 module "security_ou" {
-  source         = "./modules/flagscript-staged-ou"
+  source         = "./modules/foundational-staged-ou"
   application_id = var.application_id
   name           = "Security"
   parent_id      = local.flagscript_root_id
