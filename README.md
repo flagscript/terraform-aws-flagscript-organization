@@ -16,9 +16,9 @@
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_deployments_ou"></a> [deployments\_ou](#module\_deployments\_ou) | ./modules/flagscript-staged-ou | n/a |
-| <a name="module_infrastructure_ou"></a> [infrastructure\_ou](#module\_infrastructure\_ou) | ./modules/flagscript-staged-ou | n/a |
-| <a name="module_security_ou"></a> [security\_ou](#module\_security\_ou) | ./modules/flagscript-staged-ou | n/a |
+| <a name="module_deployments_ou"></a> [deployments\_ou](#module\_deployments\_ou) | ./modules/foundational-staged-ou | n/a |
+| <a name="module_infrastructure_ou"></a> [infrastructure\_ou](#module\_infrastructure\_ou) | ./modules/foundational-staged-ou | n/a |
+| <a name="module_security_ou"></a> [security\_ou](#module\_security\_ou) | ./modules/foundational-staged-ou | n/a |
 | <a name="module_suspended_ou"></a> [suspended\_ou](#module\_suspended\_ou) | ./modules/foundational-ou | n/a |
 | <a name="module_workloads_ou"></a> [workloads\_ou](#module\_workloads\_ou) | ./modules/foundational-ou | n/a |
 
