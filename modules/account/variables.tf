@@ -28,8 +28,23 @@ variable "contact_info" {
   })
 }
 
+variable "devops_group_id" {
+  description = "Id of the devops iamic group."
+  type        = string
+}
+
+variable "devops_permission_set_arn" {
+  description = "Arn of the devops permission set."
+  type        = string
+}
+
 variable "email" {
   description = "The email address of the account."
+  type        = string
+}
+
+variable "identity_store_arn" {
+  description = "Arn of the identity store."
   type        = string
 }
 
