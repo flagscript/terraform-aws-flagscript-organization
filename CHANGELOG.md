@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.5.0...v0.5.1) (2024-08-23)
+
+
+### Bug Fixes
+
+* **resolves #19:** Make thumprint lower case. ([05b5690](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/05b5690d065e06626bd296b72a367bfb76a65e0e)), closes [#19](https://github.com/flagscript/terraform-aws-flagscript-organization/issues/19)
+
 # [0.5.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.4.2...v0.5.0) (2024-08-23)
 
 
