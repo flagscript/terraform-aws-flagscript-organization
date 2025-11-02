@@ -33,7 +33,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_application_id"></a> [application\_id](#input\_application\_id) | Application Id | `string` | n/a | yes |
 | <a name="input_client_id"></a> [client\_id](#input\_client\_id) | The id for the client. | `string` | n/a | yes |
-| <a name="input_contact_info"></a> [contact\_info](#input\_contact\_info) | Contact information for the account. | <pre>object({<br>    address      = string<br>    city         = string<br>    company      = string<br>    country_code = string<br>    county       = string<br>    email        = string<br>    name         = string<br>    phone        = string<br>    postal_code  = string<br>    state        = string<br>    title        = string<br>    website      = string<br>  })</pre> | n/a | yes |
+| <a name="input_contact_info"></a> [contact\_info](#input\_contact\_info) | Contact information for the account. | <pre>object({<br/>    address      = string<br/>    city         = string<br/>    company      = string<br/>    country_code = string<br/>    county       = string<br/>    email        = string<br/>    name         = string<br/>    phone        = string<br/>    postal_code  = string<br/>    state        = string<br/>    title        = string<br/>    website      = string<br/>  })</pre> | n/a | yes |
 | <a name="input_devops_group_id"></a> [devops\_group\_id](#input\_devops\_group\_id) | Id of the devops iamic group. | `string` | n/a | yes |
 | <a name="input_devops_permission_set_arn"></a> [devops\_permission\_set\_arn](#input\_devops\_permission\_set\_arn) | Arn of the devops permission set. | `string` | n/a | yes |
 | <a name="input_email"></a> [email](#input\_email) | The email address of the account. | `string` | n/a | yes |
