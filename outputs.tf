@@ -12,114 +12,114 @@ output "org_id" {
 ## Deployments ou outputs
 output "deployments_ou_arn" {
   description = "Arn of the deployments ou."
-  value       = module.deployments_ou.ou_arn
+  value       = aws_organizations_organizational_unit.deployments_ou.arn
 }
 
 output "deployments_ou_id" {
   description = "Id of the deployments ou."
-  value       = module.deployments_ou.ou_id
+  value       = aws_organizations_organizational_unit.deployments_ou.id
 }
 
 output "test_deployments_ou_arn" {
   description = "Arn of the test deployments ou."
-  value       = module.deployments_ou.test_ou_arn
+  value       = aws_organizations_organizational_unit.deployments_test_ou.arn
 }
 
 output "test_deployments_ou_id" {
   description = "Id of the test deployments ou."
-  value       = module.deployments_ou.test_ou_id
+  value       = aws_organizations_organizational_unit.deployments_test_ou.id
 }
 
 output "prod_deployments_ou_arn" {
   description = "Arn of the prod deployments ou."
-  value       = module.deployments_ou.prod_ou_arn
+  value       = aws_organizations_organizational_unit.deployments_prod_ou.arn
 }
 
 output "prod_deployments_ou_id" {
   description = "Id of the prod deployments ou."
-  value       = module.deployments_ou.prod_ou_id
+  value       = aws_organizations_organizational_unit.deployments_prod_ou.id
 }
 
 # Infrastructure ou outputs
 output "infrastructure_ou_arn" {
   description = "Arn of the infrastructure ou."
-  value       = module.infrastructure_ou.ou_arn
+  value       = aws_organizations_organizational_unit.infrastructure_ou.arn
 }
 
 output "infrastructure_ou_id" {
   description = "Id of the infrastructure ou."
-  value       = module.infrastructure_ou.ou_id
+  value       = aws_organizations_organizational_unit.infrastructure_ou.id
 }
 
 output "test_infrastructure_ou_arn" {
   description = "Arn of the test infrastructure ou."
-  value       = module.infrastructure_ou.test_ou_arn
+  value       = aws_organizations_organizational_unit.infrastructure_test_ou.arn
 }
 
 output "test_infrastructure_ou_id" {
   description = "Id of the test infrastructure ou."
-  value       = module.infrastructure_ou.test_ou_id
+  value       = aws_organizations_organizational_unit.infrastructure_test_ou.id
 }
 
 output "prod_infrastructure_ou_arn" {
   description = "Arn of the prod infrastructure ou."
-  value       = module.infrastructure_ou.prod_ou_arn
+  value       = aws_organizations_organizational_unit.infrastructure_prod_ou.arn
 }
 
 output "prod_infrastructure_ou_id" {
   description = "Id of the prod infrastructure ou."
-  value       = module.infrastructure_ou.prod_ou_id
+  value       = aws_organizations_organizational_unit.infrastructure_prod_ou.id
 }
 
 # Security ou outputs
 output "security_ou_arn" {
   description = "Arn of the security ou."
-  value       = module.security_ou.ou_arn
+  value       = aws_organizations_organizational_unit.security_ou.arn
 }
 
 output "security_ou_id" {
   description = "Id of the security ou."
-  value       = module.security_ou.ou_id
+  value       = aws_organizations_organizational_unit.security_ou.id
 }
 
 output "test_security_ou_arn" {
   description = "Arn of the test security ou."
-  value       = module.security_ou.test_ou_arn
+  value       = aws_organizations_organizational_unit.security_test_ou.arn
 }
 
 output "test_security_ou_id" {
   description = "Id of the test security ou."
-  value       = module.security_ou.test_ou_id
+  value       = aws_organizations_organizational_unit.security_test_ou.id
 }
 
 output "prod_security_ou_arn" {
   description = "Arn of the prod security ou."
-  value       = module.security_ou.prod_ou_arn
+  value       = aws_organizations_organizational_unit.security_prod_ou.arn
 }
 
 output "prod_security_ou_id" {
   description = "Id of the prod security ou."
-  value       = module.security_ou.prod_ou_id
+  value       = aws_organizations_organizational_unit.security_prod_ou.id
 }
 
 # Suspended ou outputs
 output "suspended_ou_arn" {
   description = "Arn of the suspended ou."
-  value       = module.suspended_ou.ou_arn
+  value       = aws_organizations_organizational_unit.suspended_ou.arn
 }
 
 output "suspended_ou_id" {
   description = "Id of the suspended ou."
-  value       = module.suspended_ou.ou_id
+  value       = aws_organizations_organizational_unit.suspended_ou.id
 }
 
 # Workloads ou outputs
 output "workloads_ou_arn" {
   description = "Arn of the workloads ou."
-  value       = module.workloads_ou.ou_arn
+  value       = aws_organizations_organizational_unit.workloads_ou.arn
 }
 
 output "workloads_ou_id" {
   description = "Id of the workloads ou."
-  value       = module.workloads_ou.ou_id
+  value       = aws_organizations_organizational_unit.workloads_ou.id
 }
