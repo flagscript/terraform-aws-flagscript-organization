@@ -12,8 +12,9 @@
   "keywords": [
     "flagscript",
     "aws",
-    "terraform",
-    "kms"
+    "organization",
+    "iam identity center",
+    "terraform"
   ],
   "author": {
     "name": "Greg Kaestle",
@@ -25,6 +26,6 @@
   },
   "homepage": "https://github.com/flagscript/terraform-aws-flagscript-organization#readme",
   "dependencies": {
-    "husky": "^9.1.5"
+    "husky": "^9.1.7"
   }
 }

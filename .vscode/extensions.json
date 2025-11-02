@@ -2,6 +2,9 @@
   "recommendations": [
     "eamodio.gitlens",
     "esbenp.prettier-vscode",
+    "github.remotehub",
+    "github.vscode-github-actions",
+    "github.vscode-pull-request-github",
     "hashicorp.terraform"
   ],
   "unwantedRecommendations": []
