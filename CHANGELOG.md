@@ -1,3 +1,10 @@
+## [0.6.6](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.5...v0.6.6) (2025-11-03)
+
+
+### Bug Fixes
+
+* update accounts with new groups ([d72002d](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/d72002d85ae1d466ef21e05cf4fe6649af5191c9))
+
 ## [0.6.5](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.4...v0.6.5) (2025-11-03)
 
 
