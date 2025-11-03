@@ -1,3 +1,10 @@
+## [0.7.2](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.1...v0.7.2) (2025-11-03)
+
+
+### Bug Fixes
+
+* control tower prep ([61f0578](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/61f0578bb595bd706f801c462e235011069fa931))
+
 ## [0.7.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.0...v0.7.1) (2025-11-03)
 
 
