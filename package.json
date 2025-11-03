@@ -1,6 +1,6 @@
 {
   "name": "terraform-aws-flagscript-organization",
-  "description": "Flagscript structured organization and account setup modules adhering to reasonable aws standards.",
+  "description": "Flagscript organization terraform modules - simple org for enthusiasts.",
   "main": "index.js",
   "scripts": {
     "prepare": "husky"
