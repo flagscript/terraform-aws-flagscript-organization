@@ -2,7 +2,7 @@
 locals {
   flagscript_default_aws_service_access_principals = [
     "account.amazonaws.com",
-    "artifact.amazonaws.com",
+    # "artifact.amazonaws.com", # does not work
     "auditmanager.amazonaws.com",
     # "backup.amazonaws.com",
     "billing-cost-management.amazonaws.com",
