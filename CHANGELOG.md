@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.11...v0.7.0) (2025-11-03)
+
+
+### Features
+
+* add control tower kms key ([be733e4](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/be733e49bdc7cfcabf86d6dc0823dd3c81961dd7))
+
 ## [0.6.11](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.10...v0.6.11) (2025-11-03)
 
 
