@@ -52,20 +52,20 @@ data "aws_identitystore_group" "security_auditor_group" {
 data "aws_ssoadmin_permission_set" "administator_permission_set" {
   count        = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
   region       = var.iam_identity_center_region
-  instance_arn = local.identity_store_id
+  instance_arn = local.identity_store_arn
   name         = "administrator"
 }
 
 # data "aws_ssoadmin_permission_set" "read_only_access_permission_set" {
 #   count        = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
 #   region       = var.iam_identity_center_region
-#   instance_arn = local.identity_store_id
+#   instance_arn = local.identity_store_arn
 #   name         = "read-only"
 # }
 
 data "aws_ssoadmin_permission_set" "security_auditor_permission_set" {
   count        = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
   region       = var.iam_identity_center_region
-  instance_arn = local.identity_store_id
+  instance_arn = local.identity_store_arn
   name         = "security-auditor"
 }
