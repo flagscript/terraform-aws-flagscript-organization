@@ -2,14 +2,14 @@
 locals {
   flagscript_default_aws_service_access_principals = [
     "account.amazonaws.com",
-    # "artifact.amazonaws.com",
+    "artifact.amazonaws.com",
     "auditmanager.amazonaws.com",
     # "backup.amazonaws.com",
     "billing-cost-management.amazonaws.com",
     "cloudtrail.amazonaws.com",
     "compute-optimizer.amazonaws.com",
     # "config.amazonaws.com",
-    "controltower.amazonaws.com",
+    # "controltower.amazonaws.com",
     "cost-optimization-hub.bcm.amazonaws.com",
     # "dashboard.eks.amazonaws.com",
     "detective.amazonaws.com",
