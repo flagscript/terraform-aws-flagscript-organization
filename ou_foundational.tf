@@ -1,4 +1,16 @@
 # Create various foundational ous
+## AFT ou
+resource "aws_organizations_organizational_unit" "aft_ou" {
+  name      = "AFT"
+  parent_id = local.flagscript_root_id
+  tags = merge(
+    local.common_tags,
+    {
+      "Name" = "AFT"
+    }
+  )
+}
+
 ## Sandbox ou
 resource "aws_organizations_organizational_unit" "sandbox_ou" {
   name      = "Sandbox"
