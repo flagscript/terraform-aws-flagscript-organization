@@ -14,6 +14,12 @@ variable "application_id" {
   type        = string
 }
 
+variable "deploy_control_tower" {
+  default     = false
+  description = "Whether or not control tower will be deployed."
+  type        = bool
+}
+
 variable "tags" {
   default     = {}
   description = "Additional tags to merge with every created resource in this module."

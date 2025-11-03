@@ -8,7 +8,7 @@ resource "aws_ssoadmin_account_assignment" "devops_permission_set_assignment" {
 }
 
 # iam identity center assignments
-# administator
+# administrator
 resource "aws_ssoadmin_account_assignment" "cloud_administrator_administrator_set_assignment" {
   count              = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
   instance_arn       = local.identity_store_arn

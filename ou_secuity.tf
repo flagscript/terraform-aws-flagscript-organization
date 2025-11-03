@@ -1,12 +1,12 @@
 # Create the security ous
 ## Security ou
 resource "aws_organizations_organizational_unit" "security_ou" {
-  name      = "Security"
+  name      = "Security Tooling"
   parent_id = local.flagscript_root_id
   tags = merge(
     local.common_tags,
     {
-      "Name" = "Security"
+      "Name" = "Security Tooling"
     }
   )
 }
