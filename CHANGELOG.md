@@ -1,3 +1,10 @@
+## [0.6.8](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.7...v0.6.8) (2025-11-03)
+
+
+### Bug Fixes
+
+* add tflint ([d03a09e](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/d03a09e2b75c9aed5fb499fa07eb56eeca0945f1))
+
 ## [0.6.7](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.6...v0.6.7) (2025-11-03)
 
 
