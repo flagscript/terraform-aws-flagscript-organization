@@ -1,3 +1,10 @@
+## [0.7.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.0...v0.7.1) (2025-11-03)
+
+
+### Bug Fixes
+
+* remove unused vars ([75925d1](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/75925d1169c5ccf91f3e4922ef7b394ce77ce155))
+
 # [0.7.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.11...v0.7.0) (2025-11-03)
 
 
