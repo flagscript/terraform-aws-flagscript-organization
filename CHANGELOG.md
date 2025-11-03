@@ -1,3 +1,10 @@
+## [0.6.3](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.2...v0.6.3) (2025-11-03)
+
+
+### Bug Fixes
+
+* more principals 2 ([02ce906](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/02ce9066fcb6a579a316c848769a61846747c719))
+
 ## [0.6.2](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.1...v0.6.2) (2025-11-03)
 
 
