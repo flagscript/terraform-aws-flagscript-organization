@@ -1,3 +1,11 @@
+# [0.6.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.5.1...v0.6.0) (2025-11-03)
+
+
+### Features
+
+* terraform aws 6, formalize org defintiion ([1d077ad](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/1d077ad276fcfccce90d0fefa836112d745d48f8))
+* terraform aws 6, formalize org defintiion ([d622b36](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/d622b36a93ae6d3588c6359a322ee688e3a69e4f))
+
 ## [0.5.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.5.0...v0.5.1) (2024-08-23)
 
 
