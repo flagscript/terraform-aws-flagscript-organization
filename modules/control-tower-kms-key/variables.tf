@@ -1,9 +1,5 @@
 # REQUIRED PARAMETERS
 # These parameters must be supplied when consuming this module.
-variable "client_id" {
-  description = "The id for the client."
-  type        = string
-}
 
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
