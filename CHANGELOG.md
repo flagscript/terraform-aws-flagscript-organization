@@ -1,3 +1,10 @@
+## [0.6.11](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.10...v0.6.11) (2025-11-03)
+
+
+### Bug Fixes
+
+* remove controltower service, add artifact service ([c63d55c](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/c63d55c29a7259a943ea307482ab40c8346fbe27))
+
 ## [0.6.10](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.9...v0.6.10) (2025-11-03)
 
 
