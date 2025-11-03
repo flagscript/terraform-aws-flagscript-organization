@@ -14,7 +14,7 @@ variable "application_id" {
   type        = string
 }
 
-variable "deploy_control_tower" {
+variable "control_tower_deployed" {
   default     = false
   description = "Whether or not control tower will be deployed."
   type        = bool
