@@ -1,3 +1,10 @@
+## [0.6.7](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.6...v0.6.7) (2025-11-03)
+
+
+### Bug Fixes
+
+* fix permission set lookups ([e43800f](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/e43800fc9277c80f484fb437e0e86dfd54ad1d3a))
+
 ## [0.6.6](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.5...v0.6.6) (2025-11-03)
 
 
