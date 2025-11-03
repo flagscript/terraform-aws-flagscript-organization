@@ -18,6 +18,7 @@ locals {
     "fms.amazonaws.com",
     "guardduty.amazonaws.com",
     "health.amazonaws.com",
+    "iam.amazonaws.com",
     "inspector2.amazonaws.com",
     "ipam.amazonaws.com",
     "license-manager.amazonaws.com",
