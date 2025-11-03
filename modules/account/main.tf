@@ -1,8 +1,10 @@
+# Account
 resource "aws_organizations_account" "flagscript_account" {
-  email = var.email
-  # iam_user_access_to_billing = "DENY"
-  name      = var.name
-  parent_id = var.parent_id
+  close_on_deletion          = var.close_on_deletion
+  email                      = var.email
+  iam_user_access_to_billing = var.iam_user_access_to_billing
+  name                       = var.name
+  parent_id                  = var.parent_id
   tags = merge(
     local.common_tags,
     {
@@ -11,6 +13,7 @@ resource "aws_organizations_account" "flagscript_account" {
   )
 }
 
+# Account Contact Information
 resource "aws_account_primary_contact" "account_primary_contact" {
   account_id         = aws_organizations_account.flagscript_account.id
   address_line_1     = var.contact_info.address

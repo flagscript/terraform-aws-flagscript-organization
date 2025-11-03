@@ -19,6 +19,12 @@ variable "workloads_ou_id" {
 # These parameters have reasonable defaults.
 variable "org_owner" {
   default     = "flagscript"
-  description = "Owner moniker for the flagscript organization."
+  description = "Owner moniker for the flagscript organization. This is your owner id for your enthusiast organization."
   type        = string
+}
+
+variable "tags" {
+  default     = {}
+  description = "Additional tags to merge with every created resource in this module."
+  type        = map(string)
 }
