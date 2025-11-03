@@ -1,3 +1,10 @@
+## [0.7.6](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.5...v0.7.6) (2025-11-03)
+
+
+### Bug Fixes
+
+* add aft ou ([d606f1b](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/d606f1b80da7405e42d6aeb3dcc5d26ab93e6d2b))
+
 ## [0.7.5](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.4...v0.7.5) (2025-11-03)
 
 
