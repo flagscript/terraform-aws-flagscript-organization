@@ -74,31 +74,41 @@ output "prod_infrastructure_ou_id" {
 # Security ou outputs
 output "security_ou_arn" {
   description = "Arn of the security ou."
-  value       = aws_organizations_organizational_unit.security_tooling_ou.arn
+  value       = aws_organizations_organizational_unit.security_ou.arn
 }
 
 output "security_ou_id" {
   description = "Id of the security ou."
+  value       = aws_organizations_organizational_unit.security_ou.id
+}
+
+output "security_tooling_ou_arn" {
+  description = "Arn of the security tooling ou."
+  value       = aws_organizations_organizational_unit.security_tooling_ou.arn
+}
+
+output "security_tooling_ou_id" {
+  description = "Id of the security tooling ou."
   value       = aws_organizations_organizational_unit.security_tooling_ou.id
 }
 
-output "test_security_ou_arn" {
-  description = "Arn of the test security ou."
+output "test_security_tooling_ou_arn" {
+  description = "Arn of the test security tooling ou."
   value       = aws_organizations_organizational_unit.security_tooling_test_ou.arn
 }
 
-output "test_security_ou_id" {
-  description = "Id of the test security ou."
+output "test_security_tooling_ou_id" {
+  description = "Id of the test security tooling ou."
   value       = aws_organizations_organizational_unit.security_tooling_test_ou.id
 }
 
-output "prod_security_ou_arn" {
-  description = "Arn of the prod security ou."
+output "prod_security_tooling_ou_arn" {
+  description = "Arn of the prod security tooling ou."
   value       = aws_organizations_organizational_unit.security_tooling_prod_ou.arn
 }
 
-output "prod_security_ou_id" {
-  description = "Id of the prod security ou."
+output "prod_security_tooling_ou_id" {
+  description = "Id of the prod security tooling ou."
   value       = aws_organizations_organizational_unit.security_tooling_prod_ou.id
 }
 
