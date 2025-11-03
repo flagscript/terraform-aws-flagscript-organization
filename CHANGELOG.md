@@ -1,3 +1,10 @@
+## [0.6.9](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.8...v0.6.9) (2025-11-03)
+
+
+### Bug Fixes
+
+* add cost optimization hub ([a8d2fe6](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/a8d2fe62b5dd16c609e187e3f25ec018cc34199a))
+
 ## [0.6.8](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.7...v0.6.8) (2025-11-03)
 
 
