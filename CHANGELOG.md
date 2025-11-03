@@ -1,3 +1,10 @@
+## [0.7.5](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.4...v0.7.5) (2025-11-03)
+
+
+### Bug Fixes
+
+* allow control tower deployments ([4e3777d](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/4e3777d0acc525cb6d82ba2b28ba50d470ae5535))
+
 ## [0.7.4](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.3...v0.7.4) (2025-11-03)
 
 
