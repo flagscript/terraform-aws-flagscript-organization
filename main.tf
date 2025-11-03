@@ -32,7 +32,7 @@ locals {
     "reporting.trustedadvisor.amazonaws.com",
     "resource-explorer-2.amazonaws.com",
     # "security-ir.amazonaws.com",
-    # "securityhub.amazonaws.com",
+    "securityhub.amazonaws.com",
     # "securitylake.amazonaws.com",
     "servicecatalog.amazonaws.com",
     "servicequotas.amazonaws.com",
