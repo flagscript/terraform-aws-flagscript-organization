@@ -1,3 +1,10 @@
+## [0.6.5](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.4...v0.6.5) (2025-11-03)
+
+
+### Bug Fixes
+
+* add iam ([cb92add](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/cb92addad2dae584c323ab1ae013f30cbe5614cc))
+
 ## [0.6.4](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.6.3...v0.6.4) (2025-11-03)
 
 
