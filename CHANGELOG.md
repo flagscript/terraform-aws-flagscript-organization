@@ -1,3 +1,10 @@
+## [0.9.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.0...v0.9.1) (2025-11-04)
+
+
+### Bug Fixes
+
+* remove region args ([c0348ad](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/c0348adb17af29603b9583845c3ab474f0ebd7d0))
+
 # [0.9.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.8.0...v0.9.0) (2025-11-04)
 
 
