@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.6...v0.8.0) (2025-11-04)
+
+
+### Features
+
+* add global cost budget ([c8de780](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/c8de78065c0d0c71af54f44b08d6cf0e5a9988ef))
+
 ## [0.7.6](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.5...v0.7.6) (2025-11-03)
 
 
