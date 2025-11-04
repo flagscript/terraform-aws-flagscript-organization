@@ -1,13 +1,13 @@
 # Lookup the identity store id and arn.
 data "aws_ssoadmin_instances" "iam_identity_center_instances" {
-  # region = var.iam_identity_center_region
+  region = var.iam_identity_center_region
 }
 
 # IAM Identity Center Groups
 ## cloud-administrator group
 data "aws_identitystore_group" "cloud_administrator_group" {
-  count = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
-  # region            = var.iam_identity_center_region
+  count             = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
+  region            = var.iam_identity_center_region
   identity_store_id = local.identity_store_id
 
   alternate_identifier {
@@ -34,8 +34,8 @@ data "aws_identitystore_group" "cloud_administrator_group" {
 
 ## security auditor group
 data "aws_identitystore_group" "security_auditor_group" {
-  count = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
-  # region            = var.iam_identity_center_region
+  count             = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
+  region            = var.iam_identity_center_region
   identity_store_id = local.identity_store_id
 
   alternate_identifier {
@@ -50,8 +50,8 @@ data "aws_identitystore_group" "security_auditor_group" {
 # IAM Identity Center Permission Sets #
 #######################################
 data "aws_ssoadmin_permission_set" "administator_permission_set" {
-  count = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
-  # region       = var.iam_identity_center_region
+  count        = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
+  region       = var.iam_identity_center_region
   instance_arn = local.identity_store_arn
   name         = "administrator"
 }
@@ -64,8 +64,8 @@ data "aws_ssoadmin_permission_set" "administator_permission_set" {
 # }
 
 data "aws_ssoadmin_permission_set" "security_auditor_permission_set" {
-  count = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
-  # region       = var.iam_identity_center_region
+  count        = var.deploy_default_flagscript_iam_identity_center_permissions ? 1 : 0
+  region       = var.iam_identity_center_region
   instance_arn = local.identity_store_arn
   name         = "security-auditor"
 }
