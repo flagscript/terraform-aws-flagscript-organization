@@ -1,3 +1,10 @@
+## [0.9.2](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.1...v0.9.2) (2025-11-04)
+
+
+### Bug Fixes
+
+* revert to aws 6 ([9d7a45b](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/9d7a45b190e06105d99f3f56231fed5eb24c37d4))
+
 ## [0.9.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.0...v0.9.1) (2025-11-04)
 
 
