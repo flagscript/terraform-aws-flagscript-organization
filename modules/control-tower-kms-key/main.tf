@@ -1,6 +1,6 @@
 # Control tower kms key
 resource "aws_kms_key" "control_tower_kms_key" {
-  region                             = var.control_tower_home_region
+  # region                             = var.control_tower_home_region
   bypass_policy_lockout_safety_check = false
   customer_master_key_spec           = "SYMMETRIC_DEFAULT"
   deletion_window_in_days            = var.deletion_window_in_days
@@ -98,13 +98,13 @@ data "aws_iam_policy_document" "control_tower_kms_key_policy_document" {
 }
 
 resource "aws_kms_key_policy" "control_tower_kms_key_policy" {
-  region = var.control_tower_home_region
+  # region = var.control_tower_home_region
   key_id = aws_kms_key.control_tower_kms_key.id
   policy = data.aws_iam_policy_document.control_tower_kms_key_policy_document.json
 }
 
 resource "aws_kms_alias" "control_tower_kms_key_alias" {
-  region        = var.control_tower_home_region
+  # region        = var.control_tower_home_region
   name          = "alias/${local.key_name}"
   target_key_id = aws_kms_key.control_tower_kms_key.id
 }
