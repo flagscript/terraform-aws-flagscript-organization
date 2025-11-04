@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.8.0...v0.9.0) (2025-11-04)
+
+
+### Features
+
+* downgrade to aws 5 provider for tf, aft does not support 6 yet ([d67d6d1](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/d67d6d176236d11ea8f09d28a5ad2311e3f20920))
+
 # [0.8.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.7.6...v0.8.0) (2025-11-04)
 
 
