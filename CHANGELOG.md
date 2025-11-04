@@ -1,3 +1,10 @@
+## [0.9.3](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.2...v0.9.3) (2025-11-04)
+
+
+### Bug Fixes
+
+* readd sechub policy ([158e92d](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/158e92d4f16535ae0ea25895d0afe914f3a4ff70))
+
 ## [0.9.2](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.1...v0.9.2) (2025-11-04)
 
 
