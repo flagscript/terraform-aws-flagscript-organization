@@ -1,0 +1,38 @@
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint --config .config/.commitlintrc.yaml --edit $1
+
+pre-commit:
+  parallel: true
+  jobs:
+    - name: terraform-fmt
+      glob:
+        - "*.tf"
+        - "**/*.tf"
+      run: terraform fmt -recursive
+      stage_fixed: true
+    # - name: terraform-tflint
+    #   glob:
+    #     - "*.tf"
+    #     - "**/*.tf"
+    #   run: tflint --config .config/.tflint.hcl --init && tflint --config .config/.tflint.hcl --format=junit > reports/tflint-junit.xml
+    #   depends_on:
+    #     - terraform-fmt
+
+pre-push:
+  parallel: true
+  jobs:
+    - name: no-push-to-main
+      run: if [ "$(git branch --show-current)" = "main" ]; then echo "Direct push to main is not allowed"; exit 1; fi
+    # - name: terraform-validate
+    #   run: |
+    #     set -e
+    #     dirs=$(find . -name "*.tf" -not -path "*/.terraform/*" | xargs -I {} dirname {} | sort -u)
+    #     for dir in $dirs; do
+    #       echo "Validating $dir..."
+    #       terraform -chdir="$dir" init -backend=false -input=false > /dev/null
+    #       terraform -chdir="$dir" validate
+    #     done
+    #   depends_on:
+    #     - no-push-to-main
