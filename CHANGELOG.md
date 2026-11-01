@@ -1,3 +1,10 @@
+## [0.9.6](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.5...v0.9.6) (2026-11-01)
+
+
+### Bug Fixes
+
+* return org root id ([8e275cd](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/8e275cdf59e3028263c63bc9927fd7da1427cd2e))
+
 ## [0.9.5](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.4...v0.9.5) (2026-11-01)
 
 
