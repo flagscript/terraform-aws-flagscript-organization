@@ -1,13 +1,4 @@
-output "ou_arn" {
-  description = "ARN of the client workload organizational unit."
-  value       = aws_organizations_organizational_unit.workload_ou.arn
-}
-
-output "ou_id" {
-  description = "Identifier of the client workload organizational unit."
-  value       = aws_organizations_organizational_unit.workload_ou.id
-}
-
+# Test ou outputs
 output "test_ou_arn" {
   description = "ARN of the test client workload test organizational unit."
   value       = aws_organizations_organizational_unit.workload_test_ou.arn
@@ -18,6 +9,7 @@ output "test_ou_id" {
   value       = aws_organizations_organizational_unit.workload_test_ou.id
 }
 
+# Prod ou outputs
 output "prod_ou_arn" {
   description = "ARN of the production client workload production organizational unit."
   value       = aws_organizations_organizational_unit.workload_prod_ou.arn
