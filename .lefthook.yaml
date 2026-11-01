@@ -12,6 +12,12 @@ pre-commit:
         - "**/*.tf"
       run: terraform fmt -recursive
       stage_fixed: true
+    # Only rewrites between the BEGIN_TF_DOCS/END_TF_DOCS markers; see .terraform-docs.yml
+    - name: terraform-docs
+      glob:
+        - "*.tf"
+        - "**/*.tf"
+      run: terraform-docs . && git add README.md modules/*/README.md
     # - name: terraform-tflint
     #   glob:
     #     - "*.tf"
