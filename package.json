@@ -1,6 +1,6 @@
 {
-  "name": "onprem-site-to-site-vpn",
-  "description": "Terraform module which creates a site-to-site vpn to deckers onprem.",
+  "name": "terraform-aws-flagscript-organization",
+  "description": "Flagscript organization terraform modules - simple org for enthusiasts.",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@gitlab.com/deckersbrands/aws-structure/terraform-modules/aws/networking-content-delivery/onprem-site-to-site-vpn.git"
+    "url": "git+https://github.com/flagscript/terraform-aws-flagscript-organization.git"
   },
   "license": "ISC",
   "devDependencies": {
