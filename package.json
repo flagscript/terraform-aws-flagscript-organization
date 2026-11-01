@@ -1,31 +1,27 @@
 {
-  "name": "terraform-aws-flagscript-organization",
-  "description": "Flagscript organization terraform modules - simple org for enthusiasts.",
-  "main": "index.js",
+  "name": "onprem-site-to-site-vpn",
+  "description": "Terraform module which creates a site-to-site vpn to deckers onprem.",
+  "private": true,
   "scripts": {
-    "prepare": "husky"
+    "preinstall": "npx only-allow pnpm",
+    "semantic-release": "semantic-release"
+  },
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flagscript/terraform-aws-flagscript-organization.git"
-  },
-  "keywords": [
-    "flagscript",
-    "aws",
-    "organization",
-    "iam identity center",
-    "terraform"
-  ],
-  "author": {
-    "name": "Greg Kaestle",
-    "email": "flagscript@gmail.com"
+    "url": "git+ssh://git@gitlab.com/deckersbrands/aws-structure/terraform-modules/aws/networking-content-delivery/onprem-site-to-site-vpn.git"
   },
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/flagscript/terraform-aws-flagscript-organization/issues"
-  },
-  "homepage": "https://github.com/flagscript/terraform-aws-flagscript-organization#readme",
-  "dependencies": {
-    "husky": "^9.1.7"
+  "devDependencies": {
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
+    "@semantic-release/changelog": "7.0.0",
+    "@semantic-release/exec": "7.1.0",
+    "@semantic-release/git": "11.0.1",
+    "@semantic-release/gitlab": "13.3.3",
+    "semantic-release": "25.0.9"
   }
 }
