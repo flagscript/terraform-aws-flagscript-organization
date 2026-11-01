@@ -1,3 +1,10 @@
+## [0.9.4](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.3...v0.9.4) (2026-11-01)
+
+
+### Bug Fixes
+
+* invert client ous ([990cc19](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/990cc19accc57242030be646af7cabf428f36c2a))
+
 ## [0.9.3](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.2...v0.9.3) (2025-11-04)
 
 
