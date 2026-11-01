@@ -1,4 +1,4 @@
-# Or several at once
+# Add flagscript cost allocation tags
 resource "aws_ce_cost_allocation_tag" "this" {
   for_each = toset(
     [
