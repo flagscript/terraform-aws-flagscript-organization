@@ -9,6 +9,11 @@ output "org_id" {
   value       = aws_organizations_organization.flagscript_org.id
 }
 
+output "root_id" {
+  description = "Id of the flagscript organization root."
+  value       = aws_organizations_organization.flagscript_org.roots[0].id
+}
+
 ## AFT ou outputs
 output "aft_ou_arn" {
   description = "Arn of the aft ou."
