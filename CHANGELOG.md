@@ -1,3 +1,11 @@
+## [0.9.7](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.6...v0.9.7) (2026-11-01)
+
+
+### Bug Fixes
+
+* add cost allocation tags ([fa93fce](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/fa93fce52549704530eb3cfb78c23ae94dd7209e))
+* add cost allocation tags ([f1f6acd](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/f1f6acda51e4e60ec45e26664841047f5c7bc831))
+
 ## [0.9.6](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.5...v0.9.6) (2026-11-01)
 
 
