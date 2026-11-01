@@ -1,4 +1,7 @@
 locals {
+  # Standardize client ou name
+  client_id_ou_name = join("", tolist([for word in split("-", var.client_id) : title(word)]))
+
   common_tags = merge(
     {
       "flagscript:account-owner:owner"            = var.org_owner
