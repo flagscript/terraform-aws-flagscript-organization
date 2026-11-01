@@ -1,3 +1,10 @@
+## [0.9.5](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.4...v0.9.5) (2026-11-01)
+
+
+### Bug Fixes
+
+* return ou id ([ea703d7](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/ea703d7a6c7ade648713fe5b4f7eaa707ded4dc1))
+
 ## [0.9.4](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.3...v0.9.4) (2026-11-01)
 
 
