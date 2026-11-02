@@ -1,3 +1,10 @@
+## [0.9.8](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.7...v0.9.8) (2026-11-02)
+
+
+### Bug Fixes
+
+* additoinal service principals for organization ([dfdd1ca](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/dfdd1ca15b64e5d86984a1cafd1511be68aa80c0))
+
 ## [0.9.7](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.6...v0.9.7) (2026-11-01)
 
 
