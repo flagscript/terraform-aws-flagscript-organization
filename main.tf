@@ -1,15 +1,17 @@
 # Create the organization
 locals {
   flagscript_default_aws_service_access_principals = [
+    "access-analyzer.amazonaws.com",
     "account.amazonaws.com",
     # "artifact.amazonaws.com", # does not work
     "auditmanager.amazonaws.com",
-    # "backup.amazonaws.com",
+    "backup.amazonaws.com",
     "billing-cost-management.amazonaws.com",
     "cloudtrail.amazonaws.com",
     "compute-optimizer.amazonaws.com",
-    # "config.amazonaws.com",
-    # "controltower.amazonaws.com",
+    "config.amazonaws.com",
+    "config-multiaccountsetup.amazonaws.com",
+    "controltower.amazonaws.com",
     "cost-optimization-hub.bcm.amazonaws.com",
     # "dashboard.eks.amazonaws.com",
     "detective.amazonaws.com",
@@ -34,7 +36,7 @@ locals {
     "resource-explorer-2.amazonaws.com",
     # "security-ir.amazonaws.com",
     "securityhub.amazonaws.com",
-    # "securitylake.amazonaws.com",
+    "securitylake.amazonaws.com",
     "servicecatalog.amazonaws.com",
     "servicequotas.amazonaws.com",
     "ssm.amazonaws.com",
