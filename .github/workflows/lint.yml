@@ -13,10 +13,7 @@ jobs:
     name: TFLint Pipeline
     runs-on: ubuntu-latest
     permissions:
-      contents: write # push tags, create GitHub releases
-      issues: write # comment on/label released issues
-      pull-requests: write # comment on released PRs
-      id-token: write # only if using npm provenance / trusted publishing
+      contents: read
     steps:
       - name: Checkout source
         uses: actions/checkout@v5
