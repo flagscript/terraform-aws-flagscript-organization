@@ -1,14 +1,37 @@
-# Regenerate with: terraform-docs .
-formatter: markdown table
+# terraform-docs configuration for the root module.
+# Generates README.md between the BEGIN_TF_DOCS / END_TF_DOCS markers, wrapping the
+# generated tables with docs/header.md and docs/footer.md.
+# Each examples/* directory has its own .terraform-docs.yml (picked up via `recursive`).
+formatter: "markdown table"
+
+version: ">= 0.20.0, < 1.0.0"
+
+header-from: docs/header.md
+footer-from: docs/footer.md
 
 recursive:
   enabled: true
-  path: modules
+  path: examples
   include-main: true
+
+sections:
+  show:
+    - header
+    - requirements
+    - providers
+    - modules
+    - resources
+    - inputs
+    - outputs
+    - footer
 
 output:
   file: README.md
   mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->
 
 sort:
   enabled: true
@@ -16,9 +39,15 @@ sort:
 
 settings:
   anchor: true
+  color: true
   default: true
-  hide-empty: false
+  description: false
+  escape: true
+  hide-empty: true
   html: true
   indent: 2
+  lockfile: false
+  read-comments: true
   required: true
+  sensitive: true
   type: true

@@ -1,0 +1,44 @@
+# terraform-docs configuration for the cognito-auth-pool submodule.
+# Generates README.md between the BEGIN_TF_DOCS / END_TF_DOCS markers, with docs/header.md on top
+# and the root docs/footer.md (contributing and license) at the bottom.
+formatter: "markdown table"
+
+version: ">= 0.20.0, < 1.0.0"
+
+header-from: docs/header.md
+footer-from: ../../docs/footer.md
+
+sections:
+  show:
+    - header
+    - requirements
+    - providers
+    - resources
+    - inputs
+    - outputs
+    - footer
+
+output:
+  file: README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->
+
+sort:
+  enabled: true
+  by: required
+
+settings:
+  anchor: true
+  default: true
+  escape: true
+  hide-empty: true
+  html: true
+  indent: 2
+  lockfile: false
+  read-comments: true
+  required: true
+  sensitive: true
+  type: true

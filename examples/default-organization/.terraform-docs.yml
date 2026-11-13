@@ -1,0 +1,34 @@
+# terraform-docs configuration for this example.
+# The header comes from the leading comment block in main.tf.
+formatter: "markdown table"
+
+header-from: main.tf
+
+sections:
+  show:
+    - header
+    - requirements
+    - providers
+    - modules
+    - resources
+    - inputs
+    - outputs
+
+output:
+  file: README.md
+  mode: inject
+  template: |-
+    <!-- BEGIN_TF_DOCS -->
+    {{ .Content }}
+    <!-- END_TF_DOCS -->
+
+settings:
+  anchor: true
+  default: true
+  escape: true
+  hide-empty: true
+  html: true
+  indent: 2
+  lockfile: false
+  required: true
+  type: true
