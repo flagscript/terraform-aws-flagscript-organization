@@ -13,11 +13,17 @@ pre-commit:
       run: terraform fmt -recursive
       stage_fixed: true
     # Only rewrites between the BEGIN_TF_DOCS/END_TF_DOCS markers; see .terraform-docs.yml
+    # Regenerates the root README (with docs/header.md + docs/footer.md) and examples/*/README.md,
+    # then each submodule's README from its own modules/*/.terraform-docs.yml.
     - name: terraform-docs
       glob:
         - "*.tf"
         - "**/*.tf"
-      run: terraform-docs . && git add README.md modules/*/README.md
+        - "docs/*.md"
+        - "modules/*/docs/*.md"
+        - "**/.terraform-docs.yml"
+        - ".terraform-docs.yml"
+      run: terraform-docs . && for d in modules/*/; do terraform-docs "$d"; done && git add README.md examples/*/README.md modules/*/README.md
     # - name: terraform-tflint
     #   glob:
     #     - "*.tf"
