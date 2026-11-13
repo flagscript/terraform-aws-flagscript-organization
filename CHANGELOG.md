@@ -1,3 +1,15 @@
+# [0.10.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.8...v0.10.0) (2026-11-13)
+
+
+### Bug Fixes
+
+* update to latest flagscript versioning spec ([2709a98](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/2709a98e0b8123d5c364aeeb3c9886b89a683364))
+
+
+### Features
+
+* add contact info to account, fix account name tag capitolization ([c740d23](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/c740d2312ce835b7f4723b1593084a5dbcc8f744))
+
 ## [0.9.8](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.7...v0.9.8) (2026-11-02)
 
 
