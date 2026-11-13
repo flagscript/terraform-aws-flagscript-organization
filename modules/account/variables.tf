@@ -5,8 +5,8 @@ variable "client_id" {
   type        = string
 }
 
-variable "contact_info" {
-  description = "Contact information for the account."
+variable "primary_contact_info" {
+  description = "Primary contact information for the account."
   type = object({
     address      = string
     city         = string
@@ -56,6 +56,17 @@ variable "application_id" {
   type        = string
 }
 
+variable "billing_contact_info" {
+  default     = null
+  description = "Billing contact information for the account."
+  type = object({
+    email = string
+    name  = string
+    phone = string
+    title = string
+  })
+}
+
 variable "close_on_deletion" {
   default     = true
   description = "If true, a deletion event will close the account. Otherwise, it will only remove from the organization."
@@ -79,10 +90,32 @@ variable "iam_user_access_to_billing" {
   type        = string
 }
 
+variable "operations_contact_info" {
+  default     = null
+  description = "Operations contact information for the account."
+  type = object({
+    email = string
+    name  = string
+    phone = string
+    title = string
+  })
+}
+
 variable "org_owner" {
   default     = "flagscript"
   description = "Owner moniker for the flagscript organization. This is your owner id for your enthusiast organization."
   type        = string
+}
+
+variable "security_contact_info" {
+  default     = null
+  description = "Security contact information for the account."
+  type = object({
+    email = string
+    name  = string
+    phone = string
+    title = string
+  })
 }
 
 variable "tags" {

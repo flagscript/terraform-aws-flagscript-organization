@@ -99,18 +99,21 @@ No modules.
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_client_id"></a> [client\_id](#input\_client\_id) | The id for the client. | `string` | n/a | yes |
-| <a name="input_contact_info"></a> [contact\_info](#input\_contact\_info) | Contact information for the account. | <pre>object({<br/>    address      = string<br/>    city         = string<br/>    company      = string<br/>    country_code = string<br/>    county       = string<br/>    email        = string<br/>    name         = string<br/>    phone        = string<br/>    postal_code  = string<br/>    state        = string<br/>    title        = string<br/>    website      = string<br/>  })</pre> | n/a | yes |
 | <a name="input_devops_group_id"></a> [devops\_group\_id](#input\_devops\_group\_id) | Id of the devops iamic group. | `string` | n/a | yes |
 | <a name="input_devops_permission_set_arn"></a> [devops\_permission\_set\_arn](#input\_devops\_permission\_set\_arn) | Arn of the devops permission set. | `string` | n/a | yes |
 | <a name="input_email"></a> [email](#input\_email) | The email address of the account. | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | The name for the aws account. | `string` | n/a | yes |
 | <a name="input_parent_id"></a> [parent\_id](#input\_parent\_id) | ID of the parent organizational unit. | `string` | n/a | yes |
+| <a name="input_primary_contact_info"></a> [primary\_contact\_info](#input\_primary\_contact\_info) | Primary contact information for the account. | <pre>object({<br/>    address      = string<br/>    city         = string<br/>    company      = string<br/>    country_code = string<br/>    county       = string<br/>    email        = string<br/>    name         = string<br/>    phone        = string<br/>    postal_code  = string<br/>    state        = string<br/>    title        = string<br/>    website      = string<br/>  })</pre> | n/a | yes |
 | <a name="input_application_id"></a> [application\_id](#input\_application\_id) | Application Id | `string` | `"flagscript-organization"` | no |
+| <a name="input_billing_contact_info"></a> [billing\_contact\_info](#input\_billing\_contact\_info) | Billing contact information for the account. | <pre>object({<br/>    email = string<br/>    name  = string<br/>    phone = string<br/>    title = string<br/>  })</pre> | `null` | no |
 | <a name="input_close_on_deletion"></a> [close\_on\_deletion](#input\_close\_on\_deletion) | If true, a deletion event will close the account. Otherwise, it will only remove from the organization. | `bool` | `true` | no |
 | <a name="input_deploy_default_flagscript_iam_identity_center_permissions"></a> [deploy\_default\_flagscript\_iam\_identity\_center\_permissions](#input\_deploy\_default\_flagscript\_iam\_identity\_center\_permissions) | Whether or not to deploy flagscipt default permission sets. | `bool` | `true` | no |
 | <a name="input_iam_identity_center_region"></a> [iam\_identity\_center\_region](#input\_iam\_identity\_center\_region) | Region where iam identity center is configured. | `string` | `"us-west-2"` | no |
 | <a name="input_iam_user_access_to_billing"></a> [iam\_user\_access\_to\_billing](#input\_iam\_user\_access\_to\_billing) | If set to ALLOW, the new account enables IAM users and roles to access account billing information if they have the required permissions. If set to DENY, then only the root user (and no roles) of the new account can access account billing information. | `string` | `"ALLOW"` | no |
+| <a name="input_operations_contact_info"></a> [operations\_contact\_info](#input\_operations\_contact\_info) | Operations contact information for the account. | <pre>object({<br/>    email = string<br/>    name  = string<br/>    phone = string<br/>    title = string<br/>  })</pre> | `null` | no |
 | <a name="input_org_owner"></a> [org\_owner](#input\_org\_owner) | Owner moniker for the flagscript organization. This is your owner id for your enthusiast organization. | `string` | `"flagscript"` | no |
+| <a name="input_security_contact_info"></a> [security\_contact\_info](#input\_security\_contact\_info) | Security contact information for the account. | <pre>object({<br/>    email = string<br/>    name  = string<br/>    phone = string<br/>    title = string<br/>  })</pre> | `null` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Additional tags to merge with every created resource in this module. | `map(string)` | `{}` | no |
 
 ## Outputs
