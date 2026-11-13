@@ -1,3 +1,10 @@
+## [0.10.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.10.0...v0.10.1) (2026-11-13)
+
+
+### Bug Fixes
+
+* add missing local ([cccac89](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/cccac8942d41fcd9dbe644d0e765598fd5b86553))
+
 # [0.10.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.9.8...v0.10.0) (2026-11-13)
 
 
