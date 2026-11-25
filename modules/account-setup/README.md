@@ -60,7 +60,8 @@ module "acme_prod_setup" {
 | ---- | ---- |
 | [aws_iam_account_alias.alias](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_alias) | resource |
 | [aws_iam_account_password_policy.password_policy](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_account_password_policy) | resource |
-| [aws_iam_openid_connect_provider.github_openid_provider](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_openid_connect_provider) | resource |
+| [aws_iam_openid_connect_provider.github](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_openid_connect_provider) | resource |
+| [aws_iam_security_token_service_preferences.token_version_preference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_security_token_service_preferences) | resource |
 | [aws_s3_account_public_access_block.account_s3_public_access_block](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_account_public_access_block) | resource |
 
 ## Inputs
@@ -68,8 +69,9 @@ module "acme_prod_setup" {
 | Name | Description | Type | Default | Required |
 | ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_name"></a> [name](#input\_name) | The name for the aws account. | `string` | n/a | yes |
-| <a name="input_install_github_openid_profider"></a> [install\_github\_openid\_profider](#input\_install\_github\_openid\_profider) | Whether or not to install the github oidc provider. Currently for flagscript, this is only for accounts where github is pushing s3 content. | `bool` | `false` | no |
-| <a name="input_openid_provider_name"></a> [openid\_provider\_name](#input\_openid\_provider\_name) | Name of the github openid provider. | `string` | `"FlagscriptGitHibOpenIdProvider"` | no |
+| <a name="input_install_github_openid_provider"></a> [install\_github\_openid\_provider](#input\_install\_github\_openid\_provider) | Whether or not to install a github oidc provider for the account. | `bool` | `false` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Additional tags to merge with every created resource in this module. | `map(string)` | `{}` | no |
+| <a name="input_token_version_preference"></a> [token\_version\_preference](#input\_token\_version\_preference) | The global endpoint token version preference for the account. | `string` | `"v1Token"` | no |
 
 ## Contributing
 
