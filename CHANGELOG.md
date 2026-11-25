@@ -1,3 +1,15 @@
+# [0.11.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.10.1...v0.11.0) (2026-11-25)
+
+
+### Bug Fixes
+
+* fix module repo tagging ([b75529b](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/b75529bdb654fa6e6e68e1ea5442cc24a2c2e132))
+
+
+### Features
+
+* update github oidc, add sts token preference ([a6a5b3f](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/a6a5b3f6f2f5f24e0fa767469103ed3797540d01))
+
 ## [0.10.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.10.0...v0.10.1) (2026-11-13)
 
 
