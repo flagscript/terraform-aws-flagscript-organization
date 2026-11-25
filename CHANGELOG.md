@@ -1,3 +1,10 @@
+## [0.11.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.11.0...v0.11.1) (2026-11-25)
+
+
+### Bug Fixes
+
+* adjust github oidc name tag ([d26c284](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/d26c284aaf662f9bed69ee533fd4f22c76d237cf))
+
 # [0.11.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.10.1...v0.11.0) (2026-11-25)
 
 
