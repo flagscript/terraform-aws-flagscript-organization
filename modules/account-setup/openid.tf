@@ -7,7 +7,7 @@ resource "aws_iam_openid_connect_provider" "github" {
   tags = merge(
     local.common_tags,
     {
-      "Name" = "github-openid-provider"
+      "Name" = "token.actions.githubusercontent.com"
     }
   )
 }
