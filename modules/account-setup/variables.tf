@@ -7,14 +7,25 @@ variable "name" {
 
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
-variable "install_github_openid_profider" {
+variable "install_github_openid_provider" {
   default     = false
-  description = "Whether or not to install the github oidc provider. Currently for flagscript, this is only for accounts where github is pushing s3 content."
+  description = "Whether or not to install a github oidc provider for the account."
   type        = bool
 }
 
-variable "openid_provider_name" {
-  default     = "FlagscriptGitHibOpenIdProvider"
-  description = "Name of the github openid provider."
+variable "token_version_preference" {
+  default     = "v1Token"
+  description = "The global endpoint token version preference for the account."
   type        = string
+
+  validation {
+    condition     = contains(["v1Token", "v2Token"], var.token_version_preference)
+    error_message = "token_version_preference must be either 'v1Token' or 'v2Token'."
+  }
+}
+
+variable "tags" {
+  default     = {}
+  description = "Additional tags to merge with every created resource in this module."
+  type        = map(string)
 }

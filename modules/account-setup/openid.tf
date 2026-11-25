@@ -1,15 +1,13 @@
-resource "aws_iam_openid_connect_provider" "github_openid_provider" {
-  count = var.install_github_openid_profider ? 1 : 0
-  url   = "https://token.actions.githubusercontent.com"
+resource "aws_iam_openid_connect_provider" "github" {
+  count = var.install_github_openid_provider ? 1 : 0
   client_id_list = [
     "sts.amazonaws.com",
   ]
-  thumbprint_list = ["d89e3bd43d5d909b47a18977aa9d5ce36cee184c"]
+  url = "https://token.actions.githubusercontent.com"
   tags = merge(
     local.common_tags,
     {
-      Name = var.openid_provider_name
-      "oidc-provider-type" : "github"
+      "Name" = "github-openid-provider"
     }
   )
 }
