@@ -11,7 +11,7 @@ locals {
       "flagscript:cost-allocation:owner"          = var.org_owner
       "flagscript:data-owner:owner"               = var.org_owner
       "flagscript:operations:owner"               = var.org_owner
-      "teraform:module:repository"                = "https://github.com/flagscript/terraform-aws-flagscript-organization"
+      "terraform:module:repository"               = "https://github.com/flagscript/terraform-aws-flagscript-organization"
       "terraform:module"                          = "terraform-aws-flagscript-organization//control-tower-kms-key"
     },
     var.tags
