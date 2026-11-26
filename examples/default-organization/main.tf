@@ -3,5 +3,5 @@ module "flagscript_organization" {
     aws = aws.organization-administrator
   }
   source  = "flagscript/flagscript-organization/aws"
-  version = "0.6.5"
+  version = "~> 0.11"
 }

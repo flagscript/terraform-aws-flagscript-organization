@@ -1,4 +1,4 @@
-# terraform-docs configuration for the cognito-auth-pool submodule.
+# terraform-docs configuration for the account-setup submodule.
 # Generates README.md between the BEGIN_TF_DOCS / END_TF_DOCS markers, with docs/header.md on top
 # and the root docs/footer.md (contributing and license) at the bottom.
 formatter: "markdown table"

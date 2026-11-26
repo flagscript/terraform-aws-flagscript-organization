@@ -5,7 +5,8 @@ Creates a member account in a Flagscript organization, sets its primary and alte
 ## What it creates
 
 - **An AWS account** (`aws_organizations_account`) in the OU given by `parent_id`, tagged with the Flagscript ownership and cost allocation tags.
-- **A primary contact** and **billing, operations and security alternate contacts**, all filled in from `contact_info`.
+- **A primary contact** from `primary_contact_info`.
+- **Billing, operations and security alternate contacts.** Each comes from its own optional input (`billing_contact_info`, `operations_contact_info`, `security_contact_info`). Any that you leave out use the email, name, phone and title from `primary_contact_info`.
 - **A DevOps assignment** that gives the group `devops_group_id` the permission set `devops_permission_set_arn` on the new account.
 - **Default Flagscript assignments** (when `deploy_default_flagscript_iam_identity_center_permissions = true`):
   - the `cloud-administator` group gets the `administrator` permission set
@@ -24,7 +25,7 @@ Creates a member account in a Flagscript organization, sets its primary and alte
 ```hcl
 module "acme_prod_account" {
   source  = "flagscript/flagscript-organization/aws//modules/account"
-  version = "~> 0.9"
+  version = "~> 0.11"
 
   name      = "acme-prod"
   email     = "aws+acme-prod@example.com"
@@ -34,7 +35,7 @@ module "acme_prod_account" {
   devops_group_id           = "906753a1b2-11112222-3333-4444-5555-666677778888"
   devops_permission_set_arn = "arn:aws:sso:::permissionSet/ssoins-1234567890abcdef/ps-1234567890abcdef"
 
-  contact_info = {
+  primary_contact_info = {
     address      = "123 Main St"
     city         = "Seattle"
     company      = "Acme Corp"
@@ -48,10 +49,18 @@ module "acme_prod_account" {
     title        = "Operations Lead"
     website      = "https://example.com"
   }
+
+  # Optional: send security notices somewhere other than the primary contact.
+  security_contact_info = {
+    email = "security@example.com"
+    name  = "John Roe"
+    phone = "+12065550101"
+    title = "Security Lead"
+  }
 }
 ```
 
-The same `contact_info.email`, `name`, `phone` and `title` are used for all three alternate contacts. `contact_info.company` fills both the company name and the full name of the primary contact.
+Here the billing and operations contacts fall back to `primary_contact_info`. `primary_contact_info.company` fills both the company name and the full name of the primary contact.
 
 ## Notes
 

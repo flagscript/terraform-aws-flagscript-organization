@@ -38,12 +38,6 @@ variable "global_cost_budget_warning_threshold" {
   type        = number
 }
 
-variable "control_tower_deployed" {
-  default     = false
-  description = "Whether or not control tower will be deployed."
-  type        = bool
-}
-
 variable "tags" {
   default     = {}
   description = "Additional tags to merge with every created resource in this module."

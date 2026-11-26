@@ -7,6 +7,17 @@ variable "name" {
 
 # OPTIONAL PARAMETERS
 # These parameters have reasonable defaults.
+variable "account_permissions_boundary_policy_json_document" {
+  default     = null
+  description = "Optional JSON document containing the recommended account permissions boundary policy."
+  type        = string
+
+  validation {
+    condition     = var.account_permissions_boundary_policy_json_document == null || can(jsondecode(var.account_permissions_boundary_policy_json_document))
+    error_message = "Variable account_permissions_boundary_policy_json_document must be a valid JSON document."
+  }
+}
+
 variable "install_github_openid_provider" {
   default     = false
   description = "Whether or not to install a github oidc provider for the account."

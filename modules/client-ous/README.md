@@ -23,7 +23,7 @@ The OU name comes from `client_id`: it is split on hyphens, each word is title-c
 ```hcl
 module "acme_ous" {
   source  = "flagscript/flagscript-organization/aws//modules/client-ous"
-  version = "~> 0.9"
+  version = "~> 0.11"
 
   application_id  = "acme-portal"
   client_id       = "acme-corp"
