@@ -1,3 +1,15 @@
+# [0.12.0](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.11.1...v0.12.0) (2026-11-26)
+
+
+### Bug Fixes
+
+* remove useless variable for control tower setup ([aff4229](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/aff42293924f94de71e15a872ea723ee2f33fbfc))
+
+
+### Features
+
+* allow recommended account permissions boundary ([855d462](https://github.com/flagscript/terraform-aws-flagscript-organization/commit/855d4620d009a41671fc115492a7259b12587394))
+
 ## [0.11.1](https://github.com/flagscript/terraform-aws-flagscript-organization/compare/v0.11.0...v0.11.1) (2026-11-25)
 
 
