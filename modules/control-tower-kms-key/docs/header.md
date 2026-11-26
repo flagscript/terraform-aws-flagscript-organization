@@ -17,14 +17,14 @@ Apply in the **management account** before you set up or update your Control Tow
 ```hcl
 module "control_tower_kms_key" {
   source  = "flagscript/flagscript-organization/aws//modules/control-tower-kms-key"
-  version = "~> 0.9"
+  version = "~> 0.11"
 
   control_tower_home_region = "us-west-2"
   enable_key_rotation       = true
 }
 ```
 
-With the root module, also set `control_tower_deployed = true` so the organization trusts AWS Config and Control Tower.
+The root module already gives AWS Config and Control Tower trusted access to the organization.
 
 ## Notes
 

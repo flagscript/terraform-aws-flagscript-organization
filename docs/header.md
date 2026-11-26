@@ -7,7 +7,7 @@ The OU layout follows the AWS guidance in [Best practices for organizational uni
 ## What it creates
 
 - **The organization** with `feature_set = "ALL"` and these policy types enabled: AI services opt-out, backup, chatbot, EC2 declarative, resource control, Security Hub, service control and tag policies.
-- **Trusted service access** for 32 AWS service principals, including CloudTrail, GuardDuty, Security Hub, Inspector, Macie, Detective, IAM Identity Center (SSO), RAM, IPAM, Systems Manager, Service Catalog, CloudFormation StackSets, Compute Optimizer, Cost Optimization Hub and tag policies. AWS Config and Control Tower are added when `control_tower_deployed = true`.
+- **Trusted service access** for 38 AWS service principals, including IAM Access Analyzer, AWS Backup, CloudTrail, AWS Config (including multi-account setup), Control Tower, GuardDuty, Security Hub, Security Lake, Inspector, Macie, Detective, IAM Identity Center (SSO), RAM, IPAM, Systems Manager, Service Catalog, CloudFormation StackSets, Compute Optimizer, Cost Optimization Hub and tag policies.
 - **Centralized root access**: the `RootCredentialsManagement` and `RootSessions` features of IAM, so member accounts can run without root credentials.
 - **The OU tree** shown below.
 - **A monthly cost budget** (`global-cost-budget`) that sends a forecasted-spend email at the warning threshold and again at 100% of the limit.
@@ -50,7 +50,7 @@ provider "aws" {
 
 module "organization" {
   source  = "flagscript/flagscript-organization/aws"
-  version = "~> 0.9"
+  version = "~> 0.11"
 
   org_owner = "my-org"
 
@@ -64,7 +64,7 @@ Set `global_cost_budget_notification_emails`. Otherwise the budget alerts have n
 
 ### Using with AWS Control Tower
 
-When you deploy Control Tower on top of this organization, set `control_tower_deployed = true` so the organization trusts AWS Config and Control Tower. To encrypt Control Tower's logs with your own key, use the [`control-tower-kms-key`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/control-tower-kms-key) submodule.
+The organization already trusts AWS Config and Control Tower, so you can deploy a Control Tower landing zone on top of it. To encrypt Control Tower's logs with your own key, use the [`control-tower-kms-key`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/control-tower-kms-key) submodule.
 
 ## Submodules
 
@@ -73,7 +73,7 @@ These submodules build on the organization:
 | Submodule                                                                                                                                       | Purpose                                                                                                                                   |
 | ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [`account`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/account)                             | Creates a member account in an OU, sets its contacts, and assigns IAM Identity Center permission sets.                                    |
-| [`account-setup`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/account-setup)                 | Baseline hardening inside a member account: password policy, account alias, S3 public access block, and an optional GitHub OIDC provider. |
+| [`account-setup`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/account-setup)                 | Baseline hardening inside a member account: password policy, account alias, STS token preference, S3 public access block, and an optional GitHub OIDC provider and permissions boundary policy. |
 | [`client-ous`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/client-ous)                       | Creates a client's OUs under `Workloads/Test` and `Workloads/Prod`.                                                                       |
 | [`control-tower-kms-key`](https://registry.terraform.io/modules/flagscript/flagscript-organization/aws/latest/submodules/control-tower-kms-key) | A KMS key and key policy that Control Tower can use to encrypt CloudTrail and AWS Config data.                                            |
 
@@ -82,7 +82,7 @@ Reference a submodule with a `//modules/<name>` source:
 ```hcl
 module "client_ous" {
   source  = "flagscript/flagscript-organization/aws//modules/client-ous"
-  version = "~> 0.9"
+  version = "~> 0.11"
 
   application_id  = "acme-portal"
   client_id       = "acme-corp"
