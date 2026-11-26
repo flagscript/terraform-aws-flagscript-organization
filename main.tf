@@ -45,15 +45,6 @@ locals {
     "tagpolicies.tag.amazonaws.com",
     "wellarchitected.amazonaws.com"
   ]
-  control_tower_service_principals = [
-    "config.amazonaws.com",
-    "controltower.amazonaws.com",
-  ]
-  effective_service_principals = (
-    var.control_tower_deployed ?
-    concat(local.flagscript_default_aws_service_access_principals, local.control_tower_service_principals)
-    : local.flagscript_default_aws_service_access_principals
-  )
   organization_policy_types = [
     "AISERVICES_OPT_OUT_POLICY",
     "BACKUP_POLICY",
@@ -67,7 +58,7 @@ locals {
 }
 
 resource "aws_organizations_organization" "flagscript_org" {
-  aws_service_access_principals = local.effective_service_principals
+  aws_service_access_principals = local.flagscript_default_aws_service_access_principals
   enabled_policy_types          = local.organization_policy_types
   feature_set                   = "ALL"
 }
