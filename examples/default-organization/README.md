@@ -1,6 +1,6 @@
 # default-organization
 
-Create a flagscript simple organization stucture with defaults.
+Create a flagscript simple organization structure with defaults.
 
 <!-- BEGIN_TF_DOCS -->
 
@@ -9,5 +9,5 @@ Create a flagscript simple organization stucture with defaults.
 
 | Name | Source | Version |
 | ---- | ------ | ------- |
-| <a name="module_flagscript_organization"></a> [flagscript\_organization](#module\_flagscript\_organization) | flagscript/flagscript-organization/aws | 0.6.5 |
+| <a name="module_flagscript_organization"></a> [flagscript\_organization](#module\_flagscript\_organization) | flagscript/flagscript-organization/aws | ~> 0.11 |
 <!-- END_TF_DOCS -->
